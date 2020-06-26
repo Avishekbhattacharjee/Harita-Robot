@@ -116,14 +116,8 @@ def slist(bot: Bot, update: Update):
     message.reply_text(text2 + "\n", parse_mode=ParseMode.MARKDOWN)
 
 __help__ = """
+Join @AnieSupport To Contact Admins Of The Bot.
 
-- /Stats: check bot's stats
-- /chatlist: get chatlist
-- /gbanlist: get gbanned users list
-- /Gban : Global ban a user
-- /Ungban : Ungban a user
-- /gkick: Global kick a user
-- /slist Gives a list of sudo and support users
 - /zal type some text 
 """
 
