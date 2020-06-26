@@ -17,7 +17,7 @@ The Support group can be reached out to at [Support](https://t.me/AnieSupport), 
 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://gitlab.com/Avishekbhattacharjee/Anie-Robot-Master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Avishekbhattacharjee/Anie-Robot-Master)
 
 ### Configuration
 
