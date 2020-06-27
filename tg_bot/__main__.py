@@ -28,10 +28,11 @@ from tg_bot.modules.translations.strings import tld
 PM_START_TEXT = """
 
 
-Hello {}, My Name Is {} !
+🙋Hello {}, My Name is {} !
 
 I'm a powerful group management bot 🤖
-Add me to your groups as admin to manage your groups with my commands
+
+👉Add me to your groups as admin to manage your groups with my commands🤩
 
 You can find my list of available commands with /help .
  
@@ -154,6 +155,8 @@ def start(bot: Bot, update: Update, args: List[str]):
             keyboard += [[InlineKeyboardButton(text=tld(chat.id, "🌍 Join Our Support Chat 🌍"), url="https://t.me/AnieSupport")]]
 
             keyboard += [[InlineKeyboardButton(text=tld(chat.id, "Updates ❓"), url="https://t.me/AnieNews")]]
+            
+            keyboard += [[InlineKeyboardButton(text="My Super Commands ⚙️", callback_data="help_back")]]
             
             update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=False, parse_mode=ParseMode.MARKDOWN)
 
