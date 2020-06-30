@@ -368,7 +368,7 @@ def devlist(bot: Bot, update: Update):
 
 
 
-"""
+
 
 SUDO_HANDLER = CommandHandler(("addsudo"), addsudo, pass_args=True)
 SUPPORT_HANDLER = CommandHandler(("addsupport"), addsupport, pass_args=True)
@@ -394,6 +394,4 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__handlers__ = [SUDO_HANDLER, SUPPORT_HANDLER, WHITELIST_HANDLER,
-                UNSUDO_HANDLER, UNSUPPORT_HANDLER, UNWHITELIST_HANDLER,
-                WHITELISTLIST_HANDLER, SUPPORTLIST_HANDLER, SUDOLIST_HANDLER, DEVLIST_HANDLER]
+
