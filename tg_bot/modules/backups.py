@@ -5,11 +5,11 @@ from telegram import Bot, Update
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
+from tg_bot import SUPPORT_CHAT
 from tg_bot import dispatcher, LOGGER
 from tg_bot.__main__ import DATA_IMPORT
-from tg_bot.__main__ import DATA_EXPORT
 from tg_bot.modules.helper_funcs.chat_status import user_admin
-import os
+
 
 @run_async
 @user_admin
@@ -48,7 +48,7 @@ def import_data(bot: Bot, update: Update):
                 mod.__import_data__(str(chat.id), data)
         except Exception:
             msg.reply_text("An exception occured while restoring your data. The process may not be complete. If "
-                           "you're having issues with this, message @OnePunchSupport with your backup file so the "
+                           f"you're having issues with this, message @AnieSupport with your backup file so the "
                            "issue can be debugged. My owners would be happy to help, and every bug "
                            "reported makes me better! Thanks! :)")
             LOGGER.exception("Import for chatid %s with name %s failed.", str(chat.id), str(chat.title))
@@ -63,24 +63,7 @@ def import_data(bot: Bot, update: Update):
 @user_admin
 def export_data(bot: Bot, update: Update):
     msg = update.effective_message
-    chat = update.effective_chat
-    try:
-       for mod in DATA_EXPORT:
-           os.system('touch export.txt')
-           mod.__export_data__(str(chat.id))
-           with open("export.txt", 'w') as file:
-                file.write(mod)
-           
-           update.effective_message.reply_document(document="export.txt", caption="Here is the exported data.")
-           os.remove("export.txt")
-
-    except Exception:
-           msg.reply_text("An exception occured while restoring your data. The process may not be complete. If "
-                          "you're having issues with this, message @AnieSupport with your backup file so the "
-                          "issue can be debugged. My owners would be happy to help, and every bug "
-                          "reported makes me better! Thanks! :)")
-           LOGGER.exception("Import for chatid %s with name %s failed.", str(chat.id), str(chat.title))
-           return
+    msg.reply_text("Doesn't work yet.")
 
 
 __help__ = """
@@ -96,5 +79,5 @@ EXPORT_HANDLER = CommandHandler("export", export_data)
 dispatcher.add_handler(IMPORT_HANDLER)
 dispatcher.add_handler(EXPORT_HANDLER)
 
-__mod_name__ = "BACKUP"
+__mod_name__ = "Backups"
 __handlers__ = [IMPORT_HANDLER, EXPORT_HANDLER]
