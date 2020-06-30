@@ -93,4 +93,5 @@ dispatcher.add_handler(IMPORT_HANDLER)
 dispatcher.add_handler(EXPORT_HANDLER)
 
 __mod_name__ = "Backups"
+__handlers__ = [IMPORT_HANDLER, EXPORT_HANDLER]
 
