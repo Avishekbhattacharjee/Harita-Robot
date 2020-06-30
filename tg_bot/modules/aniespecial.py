@@ -17,4 +17,4 @@ that files/photos can't be imported due to telegram restrictions.
 - /google <text>: perform a google search(⚠️Not Working Now, Soon Work⚠️)
 - /sudolist :- See The Sudolist if you need any help.
 """
-__mod_name__ = "✳️Special✳️"
+__mod_name__ = "✴️Special✴️"
