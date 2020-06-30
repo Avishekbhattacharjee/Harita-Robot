@@ -69,5 +69,3 @@ def sudodemote(bot: Bot, update: Update, args: List[str]):
     return ""
 
 
-dispatcher.add_handler(SUDOPROMOTE_HANDLER)
-dispatcher.add_handler(SUDODEMOTE_HANDLER)
