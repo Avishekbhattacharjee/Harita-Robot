@@ -84,12 +84,13 @@ def export_data(bot: Bot, update: Update):
 
 
 
-"""
 
 
+IMPORT_HANDLER = CommandHandler("import", import_data)
+EXPORT_HANDLER = CommandHandler("export", export_data)
 
 dispatcher.add_handler(IMPORT_HANDLER)
 dispatcher.add_handler(EXPORT_HANDLER)
 
 __mod_name__ = "Backups"
-__handlers__ = [IMPORT_HANDLER, EXPORT_HANDLER]
+
