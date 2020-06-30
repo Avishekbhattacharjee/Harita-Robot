@@ -24,3 +24,5 @@ wikipedia
 pyowm
 tabulate
 parsel
+search_engine_parser
+google-api-python-client
