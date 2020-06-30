@@ -307,13 +307,6 @@ def __chat_settings__(chat_id, user_id):
     return "This chat is enforcing *gmutes*: `{}`.".format(sql.does_chat_gmute(chat_id))
 
 
-__help__ = """
-*Admin only:*
- - /gmutestat <on/off/yes/no>: Will disable the effect of global mutes on your group, or return your current settings.
-Gmutes, also known as global mutes, are used by the bot owners to mute spammers across all groups. This helps protect \
-you and your groups by removing spam flooders as quickly as possible. They can be disabled for you group by calling \
-/gmutestat
-"""
 
 __mod_name__ = "Global Mutes"
 
