@@ -115,11 +115,7 @@ def slist(bot: Bot, update: Update):
     message.reply_text(text1 + "\n", parse_mode=ParseMode.MARKDOWN)
     message.reply_text(text2 + "\n", parse_mode=ParseMode.MARKDOWN)
 
-__help__ = """
-Join @AnieSupport To Contact Admins Of The Bot.
 
-- /zal type some text 
-"""
 
 __mod_name__ = "Special"
 
