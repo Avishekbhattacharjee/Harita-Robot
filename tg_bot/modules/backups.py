@@ -86,8 +86,7 @@ def export_data(bot: Bot, update: Update):
 
 """
 
-IMPORT_HANDLER = CommandHandler("import", import_data)
-EXPORT_HANDLER = CommandHandler("export", export_data)
+
 
 dispatcher.add_handler(IMPORT_HANDLER)
 dispatcher.add_handler(EXPORT_HANDLER)
