@@ -10,6 +10,7 @@ __help__ = """
 - /zal type some text 
 - /git:{GitHub username} Returns info about a GitHub user or organization.
 - /music <Youtube link> : download audio file from youtube link
+- /tts <Any Text> : Converts text to speech.
 - /import: reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
 that files/photos can't be imported due to telegram restrictions.
 - /info {userid}:- get information of a userv by using this.
