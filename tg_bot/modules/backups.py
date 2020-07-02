@@ -173,7 +173,7 @@ def import_data(bot: Bot, update):
 			for mod in DATA_IMPORT:
 				mod.__import_data__(str(chat.id), data)
 		except Exception:
-			msg.reply_text("An error occurred while recovering your data. The process failed. If you experience a problem with this, please ask in @ctrlsupport!\nThank you!")
+			msg.reply_text("An error occurred while recovering your data. The process failed. If you experience a problem with this, please ask in @AnieSupport!\nThank you!")
 
 			LOGGER.exception("Imprt for the chat %s with the name %s failed.", str(chat.id), str(chat.title))
 			return
@@ -364,13 +364,6 @@ def get_chat(chat_id, chat_data):
 
 __mod_name__ = "Backups"
 
-__help__ = """
-*Only for chat administrator:*
- - /import: reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
- Note that files / photos cannot be imported due to telegram restrictions.
- - /export: export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
-This module is still in beta!
-"""
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
 EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True)
