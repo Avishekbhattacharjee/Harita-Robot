@@ -3,6 +3,7 @@ __help__ = """
 (Available queries : Country Code/Country Name/Timezone Name)
 - /shout <keyword>: write anything you want to give loud shout.
 - /toss Play Toss by using this command.
+- /blackout <text>: Apply Blackout Style to your text
 - /lyrics <song>: returns the lyrics of that song.
 - /tr (language code) as reply to a long message
 - /weather {Area Name} :- Find your area weather by using this command.
