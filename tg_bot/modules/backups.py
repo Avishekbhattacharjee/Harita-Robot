@@ -138,7 +138,7 @@ def import_data(bot: Bot, update):
 					os.remove("{}-notimported.txt".format(chat_id))
 				return
 		except Exception as err:
-			msg.reply_text(tl(update.effective_message, "An error has occurred getting Ctrl backup!\nGo, ping [Support Chat](https://t.me/ctrlsupport) and ask if any solution of it!\n\nMaybe they can resolve your issue!"), parse_mode="markdown")
+			msg.reply_text(tl(update.effective_message, "An error has occurred getting Ctrl backup!\nGo, ping [Support Chat](https://t.me/AnieSupport) and ask if any solution of it!\n\nMaybe they can resolve your issue!"), parse_mode="markdown")
 			LOGGER.exception("An error when importing from Julie base!")
 			return
 
