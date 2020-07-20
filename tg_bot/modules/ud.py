@@ -18,12 +18,6 @@ def ud(bot: Bot, update: Update):
     message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
 
 
-__help__ = """
-This is The Special Module Created By @Denzid
- - /ud <word>: Type the word or expression you want to search use.
- - /urban <word>: Same as /ud
-"""
-
 UD_HANDLER = DisableAbleCommandHandler(["ud", "urban"], ud)
 
 dispatcher.add_handler(UD_HANDLER)
