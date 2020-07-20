@@ -68,12 +68,6 @@ def music(bot: Bot, update: Update, args):
 			except:
 				bot.send_message(chat_id=chatId, text='Something went wrong with the download..!\nPlease Report there @AnonymousD3061')
 
-
-__help__ = """ Youtube audio Downloader
-This is The Special Module Created By @Denzid
- - /music <Youtube link> : download audio file from youtube link.
-
-"""
 __mod_name__ = "Music" 
 
 music_handler = CommandHandler('music', music, pass_args=True)
