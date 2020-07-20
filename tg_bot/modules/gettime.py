@@ -75,13 +75,6 @@ def gettime(bot: Bot, update: Update):
 
     send_message.edit_text(result, parse_mode=ParseMode.HTML)
 
-
-__help__ = """
- - /time <query> : Gives information about a timezone.
-
-Available queries : Country Code/Country Name/Timezone Name
-"""
-
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
