@@ -38,8 +38,6 @@ You can find my list of available commands with /help .
  
 See [Basic Configuration Checklist](t.me/Anienews/3) on how to secure your group.
 
-[#include <std/disclaimer.h>](https://telegra.ph/Anie-Robot-05-27)
-
 
 """
 
@@ -152,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
     
             keyboard = [[InlineKeyboardButton(text=tld(chat.id, "Add Me To Your Group ♥️"), url="t.me/HaritaRobot?startgroup=true")]]
 
-            keyboard += [[InlineKeyboardButton(text=tld(chat.id, "Updates ❓"), url="https://t.me/AnieNews"), InlineKeyboardButton(text=tld(chat.id, "🌍 Join Our Support Chat 🌍"), url="https://t.me/HaritaSupport")]]
+            keyboard += [[InlineKeyboardButton(text=tld(chat.id, "Updates ❓"), url="https://t.me/AnieNews"), InlineKeyboardButton(text=tld(chat.id, "🌍 Support Chat 🌍"), url="https://t.me/HaritaSupport")]]
             
             keyboard += [[InlineKeyboardButton(text="My Super Commands ⚙️", callback_data="help_back")]]
             
