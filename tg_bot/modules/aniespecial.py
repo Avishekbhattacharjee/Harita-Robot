@@ -1,5 +1,5 @@
 __help__ = """
-🌟Here You get a list of special commands. Let's Enjoy this. For Any bugs or support join @AnieSupport 🔥
+🌟Here You get a list of special commands. Let's Enjoy this. For Any bugs or support join @HaritaSupport 🔥
 
 - /time <query> : Gives information about a timezone.
 (Available queries : Country Code/Country Name/Timezone Name)
