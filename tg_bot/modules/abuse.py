@@ -33,7 +33,7 @@ def dark(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 
-"""
+
 
 __mod_name__ = "Abuse"
 
