@@ -5,6 +5,7 @@ from sqlalchemy import Column, String, UnicodeText, func, distinct
 from tg_bot.modules.sql import SESSION, BASE
 
 
+
 class Rules(BASE):
     __tablename__ = "rules"
     chat_id = Column(String(14), primary_key=True)
