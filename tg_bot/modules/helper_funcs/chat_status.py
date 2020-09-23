@@ -280,27 +280,6 @@ def can_restrict(func):
 
     return restrict_rights
 
-def can_setrules(func):
-    @wraps(func)
-    def setrules_rights(bot: Bot, update: Update, *args, **kwargs):
-        chat = update.effective_chat
-        update_chat_title = chat.title
-        message_chat_title = update.effective_message.chat.title
-
-        if update_chat_title == message_chat_title:
-            cant_setrules = f"I can't set rules here!\nMake sure I'm admin and can set rules messages."
-        else:
-            cant_setrules = f"I can't set rules in <b>{update_chat_title}</b>!\nMake sure I'm admin and can set rules there."
-
-        if chat.get_member(bot.id).can_setrules_messages:
-            return func(bot, update, *args, **kwargs)
-        else:
-            update.effective_message.reply_text(cant_setrules, parse_mode=ParseMode.HTML)
-
-    return setrules_rights
-
-
-
 def connection_status(func):
     @wraps(func)
     def connected_status(bot: Bot, update: Update, *args, **kwargs):
