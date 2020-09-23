@@ -9,7 +9,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database. Thi
 
 Can be found on telegram as [Harita Robot](https://t.me/HaritaRobot).
 
-The Support group can be reached out to at [Support](https://t.me/HaritaSupport), where you can ask for help about @aniebot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Support](https://t.me/HaritaSupport), where you can ask for help about [Harita Robot](https://t.me/HaritaRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 # Deploy The 100% Bugs Free Bot
 
