@@ -1,4 +1,4 @@
-![Harita](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fgirl-fight-wallpapers&psig=AOvVaw3bCiTXdW9YHzs_yXRzzui1&ust=1600940292491000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPia0sj9_usCFQAAAAAdAAAAABAE)
+![Harita](https://telegra.ph/Harita-Robot-09-23)
 # Harita Robot 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43872978473d46a0a44de96c96e62e27)](https://app.codacy.com/manual/Avishekbhattacharjee/Anie-Robot?utm_source=github.com&utm_medium=referral&utm_content=Avishekbhattacharjee/Anie-Robot&utm_campaign=Badge_Grade_Dashboard) 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
