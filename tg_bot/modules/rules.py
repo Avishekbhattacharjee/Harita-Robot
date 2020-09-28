@@ -49,8 +49,6 @@ def send_rules(update, chat_id, from_pm=False):
         update.effective_message.reply_text("The group admins haven't set any rules for this chat yet. "
                                             "This probably doesn't mean it's lawless though...!")
         
-   if user_can_changeinfo(chat, user, context.bot.id) == False: message.reply_text("You are missing the following rights to use this command:\n" "CanChangeInfo") return ""
-
 @run_async
 @user_admin
 def set_rules(bot: Bot, update: Update):
