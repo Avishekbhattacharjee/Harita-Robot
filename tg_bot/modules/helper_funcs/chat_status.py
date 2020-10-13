@@ -161,7 +161,7 @@ def whitelist_plus(func):
 def user_admin(func):
 
     @wraps(func)
-    def is_admin(update: Update, context: CallbackContext, *args, **kwargs):
+    def is_admin(update: Update, context: *args, **kwargs):
         bot = context.bot
         user = update.effective_user
         chat = update.effective_chat
