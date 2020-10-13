@@ -5,6 +5,7 @@ from tg_bot import (DEL_CMDS, DEV_USERS, SUDO_USERS,
                           dispatcher)
 from tg_bot.mwt import MWT
 from telegram import Chat, ChatMember, ParseMode, Update
+from tg_bot.modules.helper_funcs.extraction import extract_user # needed
 
 
 
