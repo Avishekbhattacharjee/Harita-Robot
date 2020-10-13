@@ -1,6 +1,6 @@
 from functools import wraps
 
-from tg_bot import (DEL_CMDS, DEV_USERS, SUDO_USERS, SUPPORT_CHAT,
+from tg_bot import (DEL_CMDS, DEV_USERS, SUDO_USERS,
                           SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS,
                           dispatcher)
 from tg_bot.mwt import MWT
