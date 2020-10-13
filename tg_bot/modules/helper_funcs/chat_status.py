@@ -5,7 +5,7 @@ from tg_bot import (DEL_CMDS, DEV_USERS, SUDO_USERS,
                           dispatcher)
 from tg_bot.mwt import MWT
 from telegram import Chat, ChatMember, ParseMode, Update
-from telegram.ext import CallbackContext
+
 
 
 def is_whitelist_plus(chat: Chat,
